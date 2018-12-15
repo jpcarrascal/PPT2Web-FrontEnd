@@ -29,7 +29,7 @@ namespace PPT2WebFrontEnd.Controllers
             if (env.IsDevelopment())
                 url = "https://localhost:44354/images/";
             else
-                url = "https://ppt2webuploadservice.azurewebsites.net/uploads/";
+                url = "https://ppt2webbackend.azurewebsites.net/uploads/";
             List<string> images = new List<string>();
             List<string> notes = new List<string>();
             if (!String.IsNullOrEmpty(Request.Query["deck"]))
